@@ -27,7 +27,7 @@ routes.get('/stats', async (req: Request, res:Response) => {
 });
 
 
-// ******************** Task 2 *********************
+// ******************** Task 3 *********************
 interface CryptoPriceDocument  {
   currentPrice: number;
   // other fields you might expect in the document

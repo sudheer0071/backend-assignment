@@ -32,12 +32,12 @@
  
 ## Route for task 2
 ```python
-https://assignment1.sudheer.tech/api/vi/jobs/stats?coin=<coin_id>
+https://assignment1.sudheer.tech/api/v1/jobs/stats?coin=<coin_id>
 ```
 replace <coin_id> with specific coin id
 
 ## Route for task 3
 ```python
-https://assignment1.sudheer.tech/api/vi/jobs/deviation?coin=<coin_id>
+https://assignment1.sudheer.tech/api/v1/jobs/deviation?coin=<coin_id>
 ```
 replace <coin_id> with specific coin id

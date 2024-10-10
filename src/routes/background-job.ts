@@ -5,6 +5,8 @@ import cron from 'node-cron'
 
 const COINGENCO_API_URL = 'https://api.coingecko.com/api/v3/simple/price';
 
+// ******************** Task 1 ********************* 
+
 const COINS = ["bitcoin","matic-network","ethereum"];
 
 async function fetchCryptoData() {

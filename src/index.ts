@@ -12,8 +12,8 @@ app.get('/',(req,res)=>{
   res.json({
     title:"Backend Internship Assigment",
     Task1_solution:"https://github.com/sudheer0071/backend-assignment/blob/main/src/routes/background-job.ts",
-    Task2_solution:"https://assignment1.sudheer.tech/api/vi/jobs/stats?coin=<coin_id>",
-    Task3_solution: "https://assignment1.sudheer.tech/api/vi/jobs/deviation?coin=<coin_id>"
+    Task2_solution:"https://assignment1.sudheer.tech/api/v1/jobs/stats?coin=<coin_id>",
+    Task3_solution: "https://assignment1.sudheer.tech/api/v1/jobs/deviation?coin=<coin_id>"
   })
 })
 app.listen(port,()=>{
