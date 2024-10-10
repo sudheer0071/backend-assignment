@@ -1,9 +1,9 @@
 version: '3.8'
 services:
    backend:
-    image: sudheer007dfs/backend-assignment1
+    image: sudheer007dfs/backend-assignment1:v1
     container_name: backend-server
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
     ports:
-      - "8000:8000"  
-    env_file:
-      - .env
+      - "8080:8080"

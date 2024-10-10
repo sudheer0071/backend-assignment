@@ -38,7 +38,7 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_USERNAMEE}}   
         script: |
-            sed -i "s|image: sudheer007dfs/backend-assignment1\b|image: sudheer007dfs/backend-assignment1:${{ github.sha }}|" docker-compose.yml
+            sed -i "s|image: sudheer007dfs/backend-assignment1:.*|image: sudheer007dfs/backend-assignment1:${{ github.sha }}|" docker-compose.yml
             docker-compose stop
             docker-compose rm -f
             docker-compose pull   
