@@ -46,7 +46,7 @@ routes.get('/deviation',async(req:Request,res:Response)=>{
    const allPrices:CryptoPriceDocument[] = await CryptoPrice.find(
      { coinId: coin },
      { currentPrice: 1, _id: 0 } 
-    ).lean();  
+    ).limit(100).lean();  
     
     if (!allPrices.length) {  
       res.json({message:"Invalid coin name"})

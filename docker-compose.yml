@@ -1,8 +1,9 @@
 version: '3.8'
 services:
-  backend:
+   backend:
     image: sudheer007dfs/backend-assignment
-    container_name: django-server
+    container_name: backend-server
     ports:
-      - "3000:8000" 
- 
+      - "8000:8000"  
+    env_file:
+      - .env
